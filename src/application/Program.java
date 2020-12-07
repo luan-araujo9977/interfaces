@@ -25,6 +25,8 @@ public class Program {
 		Date finish = sdf.parse(sc.nextLine());
 
 		CarRental cr = new CarRental(start, finish, new Vehicle(carModel));
+		
+		System.out.println(sdf.format(cr.getStart()));
 
 		System.out.print("Enter price per hour: ");
 		double pricePerHour = sc.nextDouble();
